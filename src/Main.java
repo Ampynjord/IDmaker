@@ -115,10 +115,14 @@ public class Main {
         System.out.println("IMC: " + imc + " ---> "+ indiceMasseCorporelle);
         System.out.println("\t" + "--> Poids idéal: " + poidsIdeal + " kg");
 
+        // Affiche un message comme quoi un fichier a été créé dans le dossier du projet
+        System.out.println();
+        System.out.println("Un fichier a été créé dans le dossier du projet");
+
 
         //Créer un fichier texte avec les informations de l'utilisateur
 
-        FileWriter fw = new FileWriter("C:\\Users\\gwenv\\OneDrive\\Bureau\\" + prenom + "_" + nom + ".txt");
+        FileWriter fw = new FileWriter(prenom + "_" + nom + ".txt");
 
         fw.write("Nom : " + nom + "\n");
         fw.write("Prénom : " + prenom + "\n");
